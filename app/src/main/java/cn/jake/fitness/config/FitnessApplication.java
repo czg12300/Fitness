@@ -23,16 +23,9 @@ public class FitnessApplication extends Application {
         mActivityMap = new HashMap<String, Activity>();
     }
 
-    /**
-     * 获取全局的上下文
-     */
     public static Context getContext() {
         return mContext;
     }
-
-    /**
-     * 获取全局变量
-     */
     public static FitnessApplication getInstance() {
         return mInstance;
     }

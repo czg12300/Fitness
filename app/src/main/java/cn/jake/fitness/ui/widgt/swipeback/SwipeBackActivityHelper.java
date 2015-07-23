@@ -1,14 +1,12 @@
 
 package cn.jake.fitness.ui.widgt.swipeback;
 
-import cn.jake.fitness.ui.widgt.ChangeThemeUtils;
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 
-/**
- * 让activity可以拖动的辅助类
- */
+import cn.jake.fitness.ui.widgt.ChangeThemeUtils;
+
 public class SwipeBackActivityHelper {
     private Activity mActivity;
 

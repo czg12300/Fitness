@@ -1,3 +1,4 @@
+
 package cn.jake.fitness.ui.widgt.swipeback;
 
 import android.content.Context;
@@ -461,12 +462,8 @@ public class ViewDragHelper {
 
     /**
      * Enable edge tracking for the selected edges of the parent view. The
-     * callback's
-     * {@link me.imid.swipebacklayout.lib.ViewDragHelper.Callback#onEdgeTouched(int, int)}
-     * and
-     * {@link me.imid.swipebacklayout.lib.ViewDragHelper.Callback#onEdgeDragStarted(int, int)}
-     * methods will only be invoked for edges for which edge tracking has been
-     * enabled.
+     * callback's methods will only be invoked for edges for which edge tracking
+     * has been enabled.
      * 
      * @param edgeFlags Combination of edge flags describing the edges to watch
      * @see #EDGE_LEFT
@@ -503,9 +500,8 @@ public class ViewDragHelper {
 
     /**
      * Capture a specific child view for dragging within the parent. The
-     * callback will be notified but
-     * {@link me.imid.swipebacklayout.lib.ViewDragHelper.Callback#tryCaptureView(android.view.View, int)}
-     * will not be asked permission to capture this view.
+     * callback will be notified but will not be asked permission to capture
+     * this view.
      * 
      * @param childView Child view to capture
      * @param activePointerId ID of the pointer that is dragging the captured
@@ -668,10 +664,10 @@ public class ViewDragHelper {
         final int addedVel = absXVel + absYVel;
         final int addedDistance = absDx + absDy;
 
-        final float xweight = xvel != 0 ? (float) absXVel / addedVel : (float) absDx
-                / addedDistance;
-        final float yweight = yvel != 0 ? (float) absYVel / addedVel : (float) absDy
-                / addedDistance;
+        final float xweight = xvel != 0 ? (float) absXVel / addedVel
+                : (float) absDx / addedDistance;
+        final float yweight = yvel != 0 ? (float) absYVel / addedVel
+                : (float) absDy / addedDistance;
 
         int xduration = computeAxisDuration(dx, xvel, mCallback.getViewHorizontalDragRange(child));
         int yduration = computeAxisDuration(dy, yvel, mCallback.getViewVerticalDragRange(child));
@@ -687,8 +683,8 @@ public class ViewDragHelper {
         final int width = mParentView.getWidth();
         final int halfWidth = width / 2;
         final float distanceRatio = Math.min(1f, (float) Math.abs(delta) / width);
-        final float distance = halfWidth + halfWidth
-                * distanceInfluenceForSnapDuration(distanceRatio);
+        final float distance = halfWidth
+                + halfWidth * distanceInfluenceForSnapDuration(distanceRatio);
 
         int duration;
         velocity = Math.abs(velocity);
@@ -757,8 +753,8 @@ public class ViewDragHelper {
      */
     public void flingCapturedView(int minLeft, int minTop, int maxLeft, int maxTop) {
         if (!mReleaseInProgress) {
-            throw new IllegalStateException("Cannot flingCapturedView outside of a call to "
-                    + "Callback#onViewReleased");
+            throw new IllegalStateException(
+                    "Cannot flingCapturedView outside of a call to " + "Callback#onViewReleased");
         }
 
         mScroller.fling(mCapturedView.getLeft(), mCapturedView.getTop(),
@@ -990,20 +986,17 @@ public class ViewDragHelper {
                 // TODO: Add versioned support here for transformed views.
                 // This will not work for transformed views in Honeycomb+
                 final View child = group.getChildAt(i);
-                if (x + scrollX >= child.getLeft()
-                        && x + scrollX < child.getRight()
-                        && y + scrollY >= child.getTop()
-                        && y + scrollY < child.getBottom()
-                        && canScroll(child, true, dx, dy, x + scrollX - child.getLeft(), y
-                                + scrollY - child.getTop())) {
+                if (x + scrollX >= child.getLeft() && x + scrollX < child.getRight()
+                        && y + scrollY >= child.getTop() && y + scrollY < child.getBottom()
+                        && canScroll(child, true, dx, dy, x + scrollX - child.getLeft(),
+                                y + scrollY - child.getTop())) {
                     return true;
                 }
             }
         }
 
-        return checkV
-                && (ViewCompat.canScrollHorizontally(v, -dx) || ViewCompat.canScrollVertically(v,
-                        -dy));
+        return checkV && (ViewCompat.canScrollHorizontally(v, -dx)
+                || ViewCompat.canScrollVertically(v, -dy));
     }
 
     /**
@@ -1077,7 +1070,6 @@ public class ViewDragHelper {
             case MotionEvent.ACTION_MOVE: {
                 // First to cross a touch slop over a draggable view wins. Also
                 // report edge drags.
-                // 增加一个非空判断
                 if (mInitialMotionX == null || mInitialMotionY == null)
                     break;
                 final int pointerCount = MotionEventCompat.getPointerCount(ev);
@@ -1481,8 +1473,8 @@ public class ViewDragHelper {
         if (dx != 0 || dy != 0) {
             final int clampedDx = clampedX - oldLeft;
             final int clampedDy = clampedY - oldTop;
-            mCallback
-                    .onViewPositionChanged(mCapturedView, clampedX, clampedY, clampedDx, clampedDy);
+            mCallback.onViewPositionChanged(mCapturedView, clampedX, clampedY, clampedDx,
+                    clampedDy);
         }
     }
 
@@ -1520,9 +1512,7 @@ public class ViewDragHelper {
 
     /**
      * Find the topmost child under the given point within the parent view's
-     * coordinate system. The child order is determined using
-     * {@link me.imid.swipebacklayout.lib.ViewDragHelper.Callback#getOrderedChildIndex(int)}
-     * .
+     * coordinate system. The child order is determined using .
      * 
      * @param x X position to test in the parent's coordinate system
      * @param y Y position to test in the parent's coordinate system
