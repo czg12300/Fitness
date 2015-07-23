@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="base_activity_style" parent="android:Theme.Light">
+
+        <!-- <item name="android:windowBackground">@android:drawable/screen_background_dark</item> -->
+        <!-- <item name="android:windowFrame">@null</item> -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowFullscreen">false</item> -->
+        <!-- <item name="android:windowIsFloating">false</item> -->
+        <!-- <item name="android:windowContentOverlay">@android:drawable/title_bar_shadow</item> -->
+        <!-- <item name="windowTitleStyle">@android:style/WindowTitle</item> -->
+        <!-- <item name="windowTitleSize">25dip</item> -->
+        <!-- <item name="windowTitleBackgroundStyle">@android:style/WindowTitleBackground</item> -->
+    </style>
+
+    <style name="base_swipe_activity_style" parent="base_activity_style">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="main_menu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@drawable/selector_text_main_menu</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="common_lv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:listSelector">@color/trans</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:divider">@drawable/divider_margin_left_right_10dip</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+</resources>

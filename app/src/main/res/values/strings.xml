@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">健身宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 主页 -->
+    <string name="news">资讯</string>
+    <string name="machine">机械</string>
+    <string name="prisoner">囚徒</string>
+    <string name="sport">运动</string>
+    <string name="mine">我的</string>
+    <string name="news_title">健康生活</string>
+    <string name="machine_title">机械健身</string>
+    <string name="prisoner_title">囚徒健身</string>
+    <string name="sport_title">我爱运动</string>
+    <string name="mine_title">个人中心</string>
+
+</resources>

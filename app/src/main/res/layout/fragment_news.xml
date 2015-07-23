@@ -1,0 +1,3 @@
+<cn.jake.fitness.ui.widgt.NoConflictListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_list"
+    style="@style/common_lv" />
