@@ -1,12 +1,13 @@
 package cn.jake.fitness.ui.fragment;
 
-import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.ListView;
+
+import java.util.ArrayList;
+
 import cn.jake.fitness.R;
 import cn.jake.fitness.entity.NewsInfo;
 import cn.jake.fitness.ui.adapter.NewsAdapter;
@@ -42,41 +43,45 @@ public class NewsFragment extends BaseFitnessFragment {
 	@Override
 	public void handleUiMessage(Message msg) {
 		ArrayList<NewsInfo> list = new ArrayList<NewsInfo>();
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("�������", "���Ƶ�����"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("��ʳ����", "ˮ������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
-		list.add(new NewsInfo("����ʶ", "�ߵ�������"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
+        list.add(new NewsInfo("测试1", "测试"));
 		mAdapter.addAll(list);
 	}
 }
